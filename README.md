@@ -48,7 +48,7 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 |MIRACLE (Llama 3.3 70B-Instruct) | **80.96** | 68.22 | **80.37** |
 |MIRACLE (OpenBioLLM-70B) | 80.69 | 69.16 | 78.50 |
 
-## Ablation Study (to analyze the contribution of each model)
+## Ablation Study (to analyze the contribution of each module)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | &check; | &hyphen; | &hyphen; | 74.81 | 57.94 | 66.35 |
