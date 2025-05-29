@@ -42,12 +42,6 @@ model = lgb.train(
     num_boost_round=100
 )
 
-# # Predict and evaluate
-# y_pred = model.predict(X_val)
-# y_pred_binary = (y_pred > 0.5).astype(int)
-# accuracy = accuracy_score(y_val, y_pred_binary)
-# print(f'Validation Accuracy: {accuracy:.4f}')
-
 
 y_pred_proba = model.predict(X_val)
 fpr, tpr, roc_thresholds   = roc_curve(y_val, y_pred_proba)
