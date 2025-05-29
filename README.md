@@ -38,14 +38,14 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 |Llama 3.3 70B-Instruct (only clinical data) | 50.89 | 36.45 | 36.45 |
 |DeepSeek R1-Distill Qwen-32B (only clinical data) | 62.92 | 33.64 | 66.35 |
 |OpenBioLLM-70B (only clinical data) | 62.42 | 41.12 | 44.85 |
-|Multivariate Logistic Regression | 80.89 | 73.83 | 80.37 |
+|Multivariate Logistic Regression | 80.89 | **73.83** | 80.37 |
 |Random Forest Classifier | 77.00 | 62.61 | 74.76 |
 |XGBoost | 75.17 | 53.27 | 64.48 |
 |Gradient Boosting Classifier | 78.53 | 65.42 | 67.29 |
 |LightGBM | 74.76 | 46.73 | 69.16 |
 |Surgeons | &hyphen; | 44.86 | &hyphen; |
 |MIRACLE (Deep Seek R1 distill) | 80.78 | 68.22 | 79.44 |
-|MIRACLE (Llama 3.3 70B-Instruct) | 80.96 | 68.22 | 80.37 |
+|MIRACLE (Llama 3.3 70B-Instruct) | **80.96** | 68.22 | **80.37** |
 |MIRACLE (OpenBioLLM-70B) | 80.69 | 69.16 | 78.50 |
 
 ## Ablation Study (to analyze the contribution of each model)
