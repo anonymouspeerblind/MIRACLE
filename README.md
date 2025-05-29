@@ -43,7 +43,7 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 |XGBoost | 75.17 | 53.27 | 64.48 |
 |Gradient Boosting Classifier | 78.53 | 65.42 | 67.29 |
 |LightGBM | 74.76 | 46.73 | 69.16 |
-|Surgeons | - | 44.86 | - |
+|Surgeons | &hyphen; | 44.86 | &hyphen; |
 |MIRACLE (Deep Seek R1 distill) | 80.78 | 68.22 | 79.44 |
 |MIRACLE (Llama 3.3 70B-Instruct) | 80.96 | 68.22 | 80.37 |
 |MIRACLE (OpenBioLLM-70B) | 80.69 | 69.16 | 78.50 |
