@@ -1,4 +1,4 @@
-# MIRACLE
+# LLM Augmented Intervenable Multimodal Adaptor for Post-operative Complication Prediction in Lung Cancer Surgery
 ### Code for anonymous submission in 8th AAAI/ACM Conference on AI, Ethics, and Society 2025
 
 ![miccai_architecture](https://github.com/user-attachments/assets/01217517-11d7-4f23-966f-523c6105a8e3)
