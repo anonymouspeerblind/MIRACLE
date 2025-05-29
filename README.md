@@ -8,7 +8,7 @@
 - conda activate miracle
 - pip install -r requirements.txt
 
-We used pytorch>=2.2.2 for CUDA=12.2
+We used PyTorch==2.2.2 for CUDA=12.2
 
 ## Preparing data and pretrained checkpoints
 
