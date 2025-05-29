@@ -136,7 +136,7 @@ All tensorboard logs are saved in experiment_logs directory
 ```
 
 ## Contact
-For more information or any questions, feel free to reach us at spandey8@buffalo.edu
+For more information or any questions, feel free to reach us at anonymouspeerblind@gmail.com
 
 ## License
-Ridgeformer is CC-BY-NC 4.0 licensed, as found in the LICENSE file. It is released for academic research / non-commercial use only.
+MIRACLE is CC-BY-NC 4.0 licensed, as found in the LICENSE file. It is released for academic research / non-commercial use only.
