@@ -51,7 +51,7 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 ## Ablation Study (to analyze the contribution of each model)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| &check; | :---: | :---: | 74.81 | 57.94 | 66.35 |
+| &check; | &hyphen; | :---: | 74.81 | 57.94 | 66.35 |
 | &check; | &check; | :---: | 79.64 | 64.48 | 76.64 |
 | &check; | &check; | &check; | 80.96 | 68.22 | 80.37 |
 
