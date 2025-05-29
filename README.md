@@ -32,6 +32,12 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 ## Testing and Evaluation
 - The trained model checkpoint is evaluated on the testing dataset using inference.py script
 
+## Surgeons vs LLM
+- The remarks from LLM is compared against remarks given by Surgeons on testing dataset
+- The comparison is done using LLM as a judge
+
+![Combined_human_vs_llm](https://github.com/user-attachments/assets/67ac47a1-7870-466b-a6f3-2b273e216151)
+
 ## Performance across different models
 |Model | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: |
