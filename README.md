@@ -51,7 +51,7 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 ## Ablation Study (to analyze the contribution of each model)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| &#2714; | :---: | :---: | :---: | :---: | :---: |
+| &checkmark; | :---: | :---: | :---: | :---: | :---: |
 
 ## Contact
 For more information or any questions, feel free to reach us at anonymouspeerblind@gmail.com
