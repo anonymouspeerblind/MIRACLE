@@ -13,6 +13,7 @@ Traditional methods use only clinical data and offer no explainability, making t
 
 ## Proposed Architecture
 <img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
+
 The proposed architecture consists of three main modules:
 - Two separate Bayesian MLP networks, one each for clinical and radiological features
 - An encoding module using a frozen encoder, fine-tuned on medical data for textual remarks
