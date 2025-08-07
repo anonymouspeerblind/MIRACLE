@@ -15,11 +15,11 @@ Traditional methods use only clinical data and offer no explainability, making t
 <img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
 
 ## Installations and environment creation
-...
+```
 conda create -n miracle python=3.9.21
 conda activate miracle
 pip install -r requirements.txt
-...
+```
 We used PyTorch==2.2.2 for CUDA=12.2
 
 ## Preparing data and pretrained checkpoints
