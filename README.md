@@ -1,7 +1,7 @@
 # [KDD'26] LLM Augmented Intervenable Multimodal Adaptor for Post-operative Complication Prediction in Lung Cancer Surgery
 ### Code for anonymous submission in 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026
 
-## Project Overview
+## Paper Overview
 <img width="923" height="660" alt="kdd_intro" src="https://github.com/user-attachments/assets/6e289d26-9a22-406a-a420-4799694e0beb" />
 
 In this work, we present MIRACLE (Multi-modal Integrated Radiomics And Clinical Language-based Explanation), a unified deep learning framework that integrates: 
@@ -11,13 +11,15 @@ In this work, we present MIRACLE (Multi-modal Integrated Radiomics And Clinical 
 
 Traditional methods use only clinical data and offer no explainability, making them black-box systems. The proposed model integrates clinical and radiological data with explanatory remarks, enabling transparency and intervention as a glass-box system.
 
+## Proposed Architecture
 <img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
 
 ## Installations and environment creation
-- conda create -n miracle python=3.9.21
-- conda activate miracle
-- pip install -r requirements.txt
-
+...
+conda create -n miracle python=3.9.21
+conda activate miracle
+pip install -r requirements.txt
+...
 We used PyTorch==2.2.2 for CUDA=12.2
 
 ## Preparing data and pretrained checkpoints
