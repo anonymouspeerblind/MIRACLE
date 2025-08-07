@@ -1,4 +1,4 @@
-# LLM Augmented Intervenable Multimodal Adaptor for Post-operative Complication Prediction in Lung Cancer Surgery
+# [KDD'26] LLM Augmented Intervenable Multimodal Adaptor for Post-operative Complication Prediction in Lung Cancer Surgery
 ### Code for anonymous submission in 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026
 
 <img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
