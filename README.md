@@ -34,9 +34,9 @@ We used PyTorch==2.2.2 for CUDA=12.2
 ### Datasets used in training, validation and testing
 The Proposed dataset, called POC-L is acquired from real lung cancer surgery patients, which went through a surgery at a well-reknowned cancer research hospital.
 
-```Some examples from POC-L dataset:
+Some examples from POC-L dataset:
 <img width="1653" height="871" alt="dataset_example_kdd" src="https://github.com/user-attachments/assets/8db573f5-0816-4dcb-97d5-487a54a24597" />
-```
+
 
 Dataset statistics:
 - 3094 patients that have went through Lung cancer surgery from 2009-2023, in well reknowned hospital and cancer research institute
