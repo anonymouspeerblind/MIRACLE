@@ -4,7 +4,7 @@
 ## Paper Overview
 <img width="923" height="660" alt="kdd_intro" src="https://github.com/user-attachments/assets/6e289d26-9a22-406a-a420-4799694e0beb" />
 
-In this work, we present MIRACLE (Multi-modal Integrated Radiomics And Clinical Language-based Explanation), a unified deep learning framework that integrates: 
+In this work, we present **MIRACLE (Multi-modal Integrated Radiomics And Clinical Language-based Explanation)**, a unified deep learning framework that integrates: 
 - Structured clinical features collected during preoperative evaluations
 - Chest CT–derived radiological features
 - LLM-generated, evidence-anchored textual explanations
@@ -34,11 +34,11 @@ We used PyTorch==2.2.2 for CUDA=12.2
 ### Datasets used in training, validation and testing
 The Proposed dataset, called POC-L is acquired from real lung cancer surgery patients, which went through a surgery at a well-reknowned cancer research hospital.
 
-Some examples from POC-L dataset:
+**Some examples from POC-L dataset:**
 <img width="1653" height="871" alt="dataset_example_kdd" src="https://github.com/user-attachments/assets/8db573f5-0816-4dcb-97d5-487a54a24597" />
 
 
-Dataset statistics:
+**Dataset statistics:**
 - 3094 patients that have went through Lung cancer surgery from 2009-2023, in well reknowned hospital and cancer research institute
 - Training split has 2694 patients
 - Validation and Testing split has 200 patients each
@@ -61,11 +61,11 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 ## Qualitative Analysis of the LLM generated remarks
 The remarks from LLM is compared against remarks given by Surgeons on testing split of POC-L. We employed three distinct types of LLMs (instruction-based, reasoning, and fine-tuned) for remark generation. Despite being given the same set, the remarks varied across the models. To quantify the relative quality of LLM explanations, we carried out a two-stage evaluation:
 
-1. Automated Adjudication: The comparison is done using LLM as a judge. It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM.
+1. **Automated Adjudication:** The comparison is done using LLM as a judge. It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM.
 
 <img width="900" height="900" alt="Combined_human_vs_llm" src="https://github.com/user-attachments/assets/40a3cee8-3946-4a8c-a8da-09fa9af0f5db" />
 
-2. Expert Manual Review: A panel of thoracic surgery specialists inspected paired surgeon and LLM-generated remarks for a representative subset of test cases. They labeled each LLM explanation as:
+2. **Expert Manual Review:** A panel of thoracic surgery specialists inspected paired surgeon and LLM-generated remarks for a representative subset of test cases. They labeled each LLM explanation as:
 - Performs better
 - Performs comparably
 - Performs worse
@@ -85,9 +85,9 @@ The remarks from LLM is compared against remarks given by Surgeons on testing sp
 |Gradient Boosting Classifier | 78.53 | 65.42 | 67.29 |
 |LightGBM | 74.76 | 46.73 | 69.16 |
 |Surgeons | &hyphen; | 44.86 | &hyphen; |
-|MIRACLE (Deep Seek R1 distill) | 80.78 | 68.22 | 79.44 |
-|MIRACLE (Llama 3.3 70B-Instruct) | **80.96** | 68.22 | **80.37** |
-|MIRACLE (OpenBioLLM-70B) | 80.69 | 69.16 | 78.50 |
+|**MIRACLE (Deep Seek R1 distill)** | 80.78 | 68.22 | 79.44 |
+|**MIRACLE (Llama 3.3 70B-Instruct)** | **80.96** | 68.22 | **80.37** |
+|**MIRACLE (OpenBioLLM-70B)** | 80.69 | 69.16 | 78.50 |
 
 ### ROC for all the models
 
@@ -97,9 +97,9 @@ The remarks from LLM is compared against remarks given by Surgeons on testing sp
 ## Ablation Study (to analyze the contribution of each module)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| &check; | &hyphen; | &hyphen; | 74.81 | 57.94 | 66.35 |
-| &check; | &check; | &hyphen; | 79.64 | 64.48 | 76.64 |
-| &check; | &check; | &check; | **80.96** | **68.22** | **80.37** |
+| **&check;** | **&hyphen;** | **&hyphen;** | 74.81 | 57.94 | 66.35 |
+| **&check;** | **&check;** | **&hyphen;** | 79.64 | 64.48 | 76.64 |
+| **&check;** | **&check;** | **&check;** | **80.96** | **68.22** | **80.37** |
 
 ## Contact
 For more information or any questions, feel free to reach us at anonymouspeerblind@gmail.com
