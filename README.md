@@ -53,22 +53,27 @@ Dataset statistics:
 Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkmhflzNGgPDKml0qFLgO5/view?usp=sharing) and unzip the contents in main directory to use it in evaluation and training scripts
 
 ## Training
-- MIRACLE is trained using the train.py script on the training dataset and validated on the validation dataset
+- MIRACLE is trained using the train.py script on the training split of POC-L and validated on the validation split
 
 ## Testing and Evaluation
-- The trained model checkpoint is evaluated on the testing dataset using inference.py script
+- The trained model checkpoint is evaluated on the testing split of POC-L using inference.py script
 
-## Surgeons vs LLM
-- The remarks from LLM is compared against remarks given by Surgeons on testing dataset
-- The comparison is done using LLM as a judge
-- It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM
-- Further strengthens our model
+## Qualitative Analysis of the LLM generated remarks
+The remarks from LLM is compared against remarks given by Surgeons on testing split of POC-L. We employed three distinct types of LLMs (instruction-based, reasoning, and fine-tuned) for remark generation. Despite being given the same set, the remarks varied across the models. To quantify the relative quality of LLM explanations, we carried out a two-stage evaluation:
+
+1. Automated Adjudication: The comparison is done using LLM as a judge. It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM.
 
 <img width="900" height="900" alt="Combined_human_vs_llm" src="https://github.com/user-attachments/assets/40a3cee8-3946-4a8c-a8da-09fa9af0f5db" />
+
+2. Expert Manual Review: A panel of thoracic surgery specialists inspected paired surgeon and LLM-generated remarks for a representative subset of test cases. They labeled each LLM explanation as:
+- Performs better
+- Performs comparably
+- Performs worse
+
 <img width="1337" height="530" alt="examples_final" src="https://github.com/user-attachments/assets/67774632-a874-4fc9-95ba-b227f0fd598d" />
 
-
-## Performance across different models
+## Quantitative Results
+### Performance across different models
 |Model | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: |
 |Llama 3.3 70B-Instruct (only clinical data) | 50.89 | 36.45 | 36.45 |
@@ -84,7 +89,7 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 |MIRACLE (Llama 3.3 70B-Instruct) | **80.96** | 68.22 | **80.37** |
 |MIRACLE (OpenBioLLM-70B) | 80.69 | 69.16 | 78.50 |
 
-## ROC for all the models
+### ROC for all the models
 
 <img width="1000" height="1000" alt="combined_ROC" src="https://github.com/user-attachments/assets/f8c3573e-3ce2-48b2-8be3-ec1033aa9a91" />
 
