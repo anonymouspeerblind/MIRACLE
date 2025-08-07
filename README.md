@@ -7,7 +7,7 @@
 In this work, we present MIRACLE (Multi-modal Integrated Radiomics And Clinical Language-based Explanation), a unified deep learning framework that integrates: 
 - Structured clinical features collected during preoperative evaluations
 - Chest CT–derived radiological features
-- LLM-generated, evidence-anchored textual explanations.
+- LLM-generated, evidence-anchored textual explanations
 
 Traditional methods use only clinical data and offer no explainability, making them black-box systems. The proposed model integrates clinical and radiological data with explanatory remarks, enabling transparency and intervention as a glass-box system.
 
