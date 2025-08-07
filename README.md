@@ -8,6 +8,7 @@ In this work, we present MIRACLE (Multi-modal Integrated Radiomics And Clinical 
 - Structured clinical features collected during preoperative evaluations
 - Chest CT–derived radiological features
 - LLM-generated, evidence-anchored textual explanations.
+
 Traditional methods use only clinical data and offer no explainability, making them black-box systems. The proposed model integrates clinical and radiological data with explanatory remarks, enabling transparency and intervention as a glass-box system.
 
 <img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
