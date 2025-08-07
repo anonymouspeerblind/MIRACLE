@@ -1,7 +1,7 @@
 # LLM Augmented Intervenable Multimodal Adaptor for Post-operative Complication Prediction in Lung Cancer Surgery
-### Code for anonymous submission in 8th AAAI/ACM Conference on AI, Ethics, and Society 2025
+### Code for anonymous submission in 32nd SIGKDD Conference on Knowledge Discovery and Data Mining, 2026
 
-![miccai_architecture](https://github.com/user-attachments/assets/01217517-11d7-4f23-966f-523c6105a8e3)
+<img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
 
 ## Installations and environment creation
 - conda create -n miracle python=3.9.21
@@ -13,11 +13,14 @@ We used PyTorch==2.2.2 for CUDA=12.2
 ## Preparing data and pretrained checkpoints
 
 ### Datasets used in training, validation and testing
+
+<img width="1653" height="871" alt="dataset_example_kdd" src="https://github.com/user-attachments/assets/8db573f5-0816-4dcb-97d5-487a54a24597" />
+
 - 3094 patients that have went through Lung cancer surgery from 2009-2023, in well reknowned hospital and cancer research institute
 - Training split has 2694 patients
 - Validation and Testing split has 200 patients each
 
-![overall_distribution](https://github.com/user-attachments/assets/249cb466-7c4c-4c1d-93a6-abcd3ccae9eb)
+<img width="612" height="180" alt="overall_distribution" src="https://github.com/user-attachments/assets/fd4f3786-aef2-44d3-b033-e8a51e282d69" />
 
 ### Preprocessing the data
 - Preprocessing is done using "preprocess_input_data.py" script, located in the dataset folder
@@ -38,7 +41,9 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 - It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM
 - Further strengthens our model
 
-![Combined_human_vs_llm](https://github.com/user-attachments/assets/67ac47a1-7870-466b-a6f3-2b273e216151)
+<img width="900" height="900" alt="Combined_human_vs_llm" src="https://github.com/user-attachments/assets/40a3cee8-3946-4a8c-a8da-09fa9af0f5db" />
+<img width="1337" height="530" alt="examples_final" src="https://github.com/user-attachments/assets/67774632-a874-4fc9-95ba-b227f0fd598d" />
+
 
 ## Performance across different models
 |Model | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
@@ -58,7 +63,8 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 
 ## ROC for all the models
 
-![combined_ROC](https://github.com/user-attachments/assets/92f69e7b-a513-46cd-949e-c0c792688df5)
+<img width="1000" height="1000" alt="combined_ROC" src="https://github.com/user-attachments/assets/f8c3573e-3ce2-48b2-8be3-ec1033aa9a91" />
+
 
 ## Ablation Study (to analyze the contribution of each module)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
