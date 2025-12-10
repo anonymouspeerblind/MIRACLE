@@ -91,6 +91,9 @@ The remarks from LLM is compared against remarks given by Surgeons on testing sp
 ### ROC for all the models
 <img width="1000" height="1000" alt="combined_ROC" src="https://github.com/user-attachments/assets/1112cb8d-6a41-4f85-8320-7aa72283b7fc" />
 
+### Confusion Matrix for surgeons' performance
+<img width="700" height="500" alt="Confusion_matrix" src="https://github.com/user-attachments/assets/6bd4e56d-b22f-4f46-9e99-00412e38f4f3" />
+
 ## Ablation Study (to analyze the contribution of each module)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
