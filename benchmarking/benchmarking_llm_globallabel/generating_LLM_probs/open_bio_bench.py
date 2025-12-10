@@ -93,8 +93,8 @@ def batch_iterate(data, batch_size):
 def main():
     llm = OpenBioLLM(
         model_id   = "aaditya/OpenBioLLM-Llama3-70B",
-        cache_dir  = "/scratch/sh57680/",
-        model_checkpoint = "/scratch/sh57680/models--aaditya--OpenBioLLM-Llama3-70B/snapshots/7ad17ef0d2185811f731f89d20885b2f99b1e994",
+        cache_dir  = "",
+        model_checkpoint = "",
         batch_size = 8
     )
     data_processor = ClinicalDataProcessor(
