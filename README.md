@@ -2,7 +2,7 @@
 ### Code for anonymous submission in P2P-CV workshop at WACV 2026
 
 ## Paper Overview
-<img width="923" height="660" alt="kdd_intro" src="https://github.com/user-attachments/assets/6e289d26-9a22-406a-a420-4799694e0beb" />
+<img width="923" height="660" alt="intro_diag" src="https://github.com/user-attachments/assets/6e30f179-2c5a-4412-83d8-7acbbdcd962c" />
 
 In this work, we present **MIRACLE (Multi-modal Integrated Radiomics And Clinical Language-based Explanation)**, a unified deep learning framework that integrates: 
 - Structured clinical features collected during preoperative evaluations
@@ -12,7 +12,7 @@ In this work, we present **MIRACLE (Multi-modal Integrated Radiomics And Clinica
 Traditional methods use only clinical data and offer no explainability, making them black-box systems. The proposed model integrates clinical and radiological data with explanatory remarks, enabling transparency and intervention as a glass-box system.
 
 ## Proposed Architecture
-<img width="1207" height="612" alt="kdd_architecture" src="https://github.com/user-attachments/assets/e73d9423-8853-4ef7-8091-4aabb95709df" />
+<img width="1207" height="612" alt="architecture" src="https://github.com/user-attachments/assets/f89f141a-9c82-448e-a450-2b7adb9b4538" />
 
 The proposed architecture consists of three main modules:
 - Two separate Bayesian MLP networks, one each for clinical and radiological features
@@ -62,15 +62,14 @@ Download the zip file from [Link](https://drive.google.com/file/d/1BUGv8cFfFLRkm
 The remarks from LLM is compared against remarks given by Surgeons on testing split of POC-L. We employed three distinct types of LLMs (instruction-based, reasoning, and fine-tuned) for remark generation. Despite being given the same set, the remarks varied across the models. To quantify the relative quality of LLM explanations, we carried out a two-stage evaluation:
 
 1. **Automated Adjudication:** The comparison is done using LLM as a judge. It can be seen that most of the remarks generated from LLM are completely aligned to remarks given by LLM.
-
-<img width="800" height="600" alt="new_combined_human_vs_llm" src="https://github.com/user-attachments/assets/d1ef90e7-e077-4cdd-aed1-d345d7a3f4ba" />
+<img width="800" height="600" alt="remark_alignment" src="https://github.com/user-attachments/assets/7d45b519-e1e1-4eb2-b59c-8dc0e99419af" />
 
 2. **Expert Manual Review:** A panel of thoracic surgery specialists inspected paired surgeon and LLM-generated remarks for a representative subset of test cases. They labeled each LLM explanation as:
 - Performs better
 - Performs comparably
 - Performs worse
 
-<img width="2168" height="574" alt="examples_final" src="https://github.com/user-attachments/assets/7da44674-f1e3-4104-9aa6-b722e5e4e215" />
+<img width="2168" height="574" alt="examples_final" src="https://github.com/user-attachments/assets/0502c8f8-5919-4478-8b27-8da2fdc0a408" />
 
 ## Quantitative Results
 ### Performance across different models
@@ -90,8 +89,7 @@ The remarks from LLM is compared against remarks given by Surgeons on testing sp
 |**MIRACLE (OpenBioLLM-70B)**  | **81.04**  | 71.96  | **81.31** |
 
 ### ROC for all the models
-
-<img width="1000" height="1000" alt="combined_ROC" src="https://github.com/user-attachments/assets/e01e8806-966a-4c54-a405-2245e6e1be8b" />
+<img width="1000" height="1000" alt="combined_ROC" src="https://github.com/user-attachments/assets/1112cb8d-6a41-4f85-8320-7aa72283b7fc" />
 
 ## Ablation Study (to analyze the contribution of each module)
 |Clinical | Radiological | LLM Remarks module | AUC(%) | TAR(%)@FAR=0.2 | TAR(%)@FAR=0.3 |
